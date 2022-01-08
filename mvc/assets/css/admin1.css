@@ -1,0 +1,442 @@
+#header{
+    max-width: 1500px;
+    margin: auto;
+    background-color: #0071c2c4;
+    box-shadow: 0 2px 10px rgb(3, 134, 84);
+}
+
+#background_admin{
+    width: 100%;
+    background-color: white;
+    background-size: cover;
+}
+
+#name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#web-name{
+    width: 450px;
+    margin-left: 50px;
+}
+
+#link-web:hover{
+    color: rgb(219, 240, 99);
+}
+
+#web-name>div{
+    width: 70px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#web-name>div>a{
+    margin-top: 5px;
+    margin-left: 10px;
+    color: white;
+}
+
+#exit{
+    width: 520px;
+}
+
+#exit>div{
+    width: 400px;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#back-home>a{
+    color: white;
+    margin:0 5px 0 5px;
+}
+
+#thong-bao>a{
+    color: white;
+    margin: 0 5px 0 5px;
+}
+
+#thong-bao>a:hover{
+    color: rgb(219, 240, 99);
+}
+
+#back-home>a:hover{
+    color: rgb(219, 240, 99);
+}
+
+.icon{
+    width: 20px;
+}
+
+#name-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#name-page>span{
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#name-hotel{
+    height: 40px;
+    margin:0;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#under-name>h2{
+    margin-top: 0;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+#danhmuc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#danhmuc>li{
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    padding: 0 40px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+#danhmuc>li:hover{
+    transform: translateY(-2px);
+}
+
+#danhmuc>li>a{
+    color: black;
+}
+
+#main{
+    display: flex;
+    margin: auto;
+    width: 1400px;
+}
+
+#main-right{
+    width: 280px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgb(20, 92, 226);
+    height: 100%;
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
+}
+
+.tieude-dmcon{
+    border-bottom: 1px solid rgba(8, 179, 113, 0.712);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tieude-dmcon>span{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+#danhmuc-con{
+    border: 3px solid rgba(5, 82, 52, 0.712);
+    margin: 10px;
+}
+
+.dm-con2{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dm-con2>img{
+    width: 40px;
+}
+
+.dm-con2:hover{
+    background-color:rgba(164, 196, 90, 0.637);
+}
+
+.name_dm{
+    font-size: 23px;
+    margin-left: 20px;
+}
+
+#user-img{
+    display: flex;
+}
+
+#user-img>img{
+    margin: 15px 10px 10px 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+#user{
+    display: flex;
+}
+
+#list-us{
+    margin-top: 20px;
+    color: white;
+}
+
+#us-name{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#us-itemnhe{
+    background-color:rgba(164, 196, 90, 0.637);
+    position: absolute;
+    display: none;
+    width: 130px;
+    border-radius: 10px;
+    border: 1px solid ;
+}
+
+.us-itemcon{
+    margin:5px;
+}
+
+.us-itemcon:hover{
+    background-color:rgba(106, 138, 32, 0.637);
+}
+
+.us-itemcon>a{
+    color: white;
+    margin-left: 10px;
+}
+
+#us-name{
+    cursor: pointer;
+}
+
+#us-name:hover #us-itemnhe{
+    display: block !important;
+}
+
+#hotel-inf{
+    margin-top: 20px;
+}
+
+#hotel{
+    border: 3px solid rgba(5, 82, 52, 0.712);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#main-left{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 10px rgb(20, 92, 226);
+    width: 1110px;
+    height: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#footer{
+    max-width: 1500px;
+    margin: auto;
+    background-color: #0071c2c4;
+    box-shadow: 0 2px 10px rgb(3, 134, 84);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#footer-ul>ul{
+    display: flex;
+}
+
+#footer-ul>ul>li{
+    padding: 20px;
+}
+
+p{
+    text-align: center;
+}
+
+#hotel-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hotel-img>div{
+    width: 80px;
+    margin-top: 10px;
+}
+
+#hotel-inf{
+    margin-top: 0;
+    text-align: center;
+}
+
+#star{
+    margin-left: 10px;
+    width: 20px;
+    display: flex;
+}
+
+select{
+    -webkit-appearance: none;
+   -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    background-color: #3597ddc4;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#avt-ks{
+    height: 100px;
+    width: 80px;
+}
+
+/*Thông báo*/
+.tb{
+    position: relative;
+}
+
+.tb:hover .thongbao{
+    display: block;
+    cursor: pointer;
+}
+
+.thongbao{
+    position: absolute;
+    left: -180px;
+    top:35px;
+    background-color: white;
+    width: 370px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1;
+} 
+
+.thongbao::before{
+    content: "";
+    border:20px solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+}
+
+#sotb{
+    opacity: 0;
+}
+
+.number_notify{
+    position: absolute;
+    top:-15px;
+    right: -10px;
+    color: white;
+    display: flex;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: tomato;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.thongbao-heading{
+    text-align: center;
+    font-size: 1.6rem;
+    color:tomato;
+    margin: 10px;
+}
+
+.thongbao-list{
+    padding-left: 0;
+}
+
+.thongbao-item{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid teal ;
+}
+
+.thongbao-item:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.thongbao-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: rgb(155, 205, 252);
+}
+
+.icon-concierge{
+    font-size: 2rem;
+
+}
+
+.thongbao-item-name{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#date{
+    position:absolute;
+    color: rgb(77, 122, 180);
+    right: 10px;
+}
+
+.backgr-tb{
+    background-color: white;
+}

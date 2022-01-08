@@ -1,0 +1,115 @@
+.item-pd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-pd:last-child{
+    margin-bottom: 20px;
+}
+
+.item-pd:nth-child(7){
+    margin-bottom: 20px;
+}
+
+.item-pd:nth-child(2){
+    margin-top: 20px;
+}
+
+.item-pd:first-child{
+    margin-top: 20px;
+}
+
+.chitiet-pd{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(212, 240, 247);
+    border-radius: 7px;
+    grid-gap: 20px;
+}
+
+.input-pd{
+    width: 250px;
+    border: 0;
+    height: 25px;
+    border-radius: 7px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#btn-close{
+    width: 22px;
+    height: 22px;
+    background-color: rgb(231, 156, 146);
+    border-radius: 50px;
+    float: right;
+    transition: transform linear 0.1s;
+    will-change: transform;
+    cursor: pointer;
+}
+
+#btn-close:hover{
+    background-color: rgb(231, 131, 118);
+    transform: translateY(-2px);
+}
+
+#chitiet{
+    color: rgb(74, 74, 243);
+    cursor: pointer;
+}
+
+#inf-ngdat{
+    display: flex;
+}
+
+#avt-ngdat{
+    width: 140px;
+    height: 140px;
+}
+
+#daduyet{
+    display: none;
+    text-align: center;
+    list-style: none;
+}
+
+#daduyet>button{
+    margin-top: 10px;
+    font-size: 18px;
+    border: 0;
+    width: 100px;
+    border-radius: 10px;
+    transition: transform linear 0.1s;
+    will-change: transform;
+    background-color: rgb(175, 247, 247);
+}
+
+#daduyet>button:hover{
+    transform: translateY(-2px);
+}
+
+#dahuy{
+    display: none;
+    text-align: center;
+    list-style: none;
+}
+
+#dahuy>button{
+    margin-top: 10px;
+    font-size: 18px;
+    border: 0;
+    width: 100px;
+    border-radius: 10px;
+    transition: transform linear 0.1s;
+    will-change: transform;
+    background-color: rgb(253, 177, 142);
+}
+
+#dahuy>button:hover{
+    transform: translateY(-2px);
+}
+
+#tthai{
+    color:blue;
+}

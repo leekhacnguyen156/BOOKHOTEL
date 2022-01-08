@@ -1,0 +1,59 @@
+:root{
+  --whitle-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.grid{
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__full-width{
+  width:100%;
+}
+
+.grid__row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Home_hotel*/
+.auth_form-hotel{
+  display: flex;
+  margin: 10px 0;
+}
+.name_hotel{
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+}
+
+.info_form{
+  font-size: 1.7rem;
+  font-weight: 500;
+  width: 80px;
+}
+
+.info_span{
+  padding-left: 10px;
+  font-size: 1.5rem;
+  margin: 0;
+  width: 200px;
+  word-wrap: break-word;
+}

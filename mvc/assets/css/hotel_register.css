@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+}
+
+#body {
+    width: 1100px;
+    display: flex;
+    margin: auto;
+    box-shadow: 0 7px 25px rgb(155, 151, 151);
+    border-radius: 20px;
+    margin-top: 30px;
+
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+select{
+    border-radius: 5px;
+    outline: none;
+}
+
+#backgr {
+    background-image: url("http://samsonbooking.vn/wp-content/uploads/2017/02/anh-background.jpg");
+    height: 720px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#hotel {
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px 0 0 15px;
+    font-style: italic;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hotel input {
+    padding: 0.5rem;
+    width: 75%;
+    margin: 0.5rem;
+}
+
+#hotel select {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+#img {
+    flex-grow: 1;
+    background-color: rgb(20, 133, 240);
+    border-radius: 0 15px 15px 0;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+#main>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn_login {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#btn_dk>button {
+    margin: 20px;
+    width: 90px;
+    height: 40px;
+    background-color: rgb(248, 83, 83);
+    border-radius: 10px;
+    border: 0;
+    font-family: 'fantasy';
+    font-size: 20px;
+}
+
+#btn_dk>button:hover {
+    background-color: rgb(250, 51, 51);
+}
+
+#img-giayphep {
+    font-style: italic;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#img-giayphep>img {
+    border: 2px solid;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+}
+
+#img-giayphep>input {
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 0;
+}
+
+#img-giayphep>label {
+    font-size: 20px;
+    padding-top: 5px;
+    margin: 20px 0 15px 0;
+}
+
+.div{
+    box-shadow: 0 7px 18px rgb(46, 44, 44);
+    margin: 20px 20px 20px 55px;
+    width: 600px;
+    height: 320px;
+}
+
+#map{
+    height: 100%;
+    border-radius: 7px;
+}
+
+.form-error{
+    padding: 5px 15px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 20px;
+    background-color: orangered;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.form-error span, i{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+#btn_dk > #btn-huy{
+    background-color: yellowgreen;
+}
+
+#btn_dk > #btn-huy:hover{
+    background-color: rgb(119, 155, 48);
+}
+
+#btn-huy>a{
+    text-decoration: none;
+    color: black;
+}

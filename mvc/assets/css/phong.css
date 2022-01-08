@@ -1,0 +1,403 @@
+.main-phong{
+    margin: 10px 30px 30px 30px;
+    width: 1050px;
+    height: 100%;
+    border: 3px solid rgba(5, 82, 52, 0.712);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-phong>span{
+    padding: 20px;
+    margin: 10px 30px 0 20px;
+    text-align: center;
+    font-size: 40px;
+    font-style:initial;
+    color: rgb(100, 49, 14);
+    border-bottom: 1px solid;
+}
+
+#list-room{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    margin: 10px;
+}
+
+img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+
+.inf{
+    display: flex;
+    width: 100%;
+}
+
+.inf-item{
+    text-align: left;
+    width: 100%;
+}
+
+.inf-item>p{
+    margin: 5px;
+}
+
+#header-room{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#header-room>h4{
+    text-align: center;
+    margin: 10px 0 10px 0;
+    width: 250px;
+}
+
+#del{
+    margin-top: 5px;
+}
+
+#xoa{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#dichvu-ks{
+    display: flex;
+    flex-direction: column;
+}
+
+#dvu{
+    /* width: 270px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#dvu>div{
+    float: right;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+#xoa:hover{
+    background-color: rgb(236, 110, 71);
+}
+
+.sua{
+    border-radius: 20%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sua:hover{
+    background-color: rgb(71, 236, 186);
+}
+
+.room{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgb(145, 156, 156);
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+.room:hover{
+    background-color:rgba(217, 248, 145, 0.637);
+    transform: translateY(-4px);
+}
+
+.room>h4{
+    margin: 10px 0 10px 0;
+}
+
+#mota{
+    font-size: 18px;
+    margin: 0;
+    padding-top: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+/* Animation*/
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
+
+/* modal*/
+#modal_delete{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    animation: fadeIn linear 0.1s;
+}
+
+#modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    animation: fadeIn linear 0.1s;
+}
+
+#modal_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(195, 202, 187, 0.425);
+}
+
+#modal_body{
+    --growth-from: 0.7;
+    --growth-to: 1;
+    width: 1050px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 10px 25px rgb(97, 100, 100);
+    animation: growth linear 0.1s;
+}
+
+#modaldel_body{
+    --growth-from: 0.7;
+    --growth-to: 1;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 10px 25px rgb(97, 100, 100);
+    animation: growth linear 0.1s;
+}
+
+#modal_body>h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+#modaldel_body>h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+#btn{
+    text-align: center;
+    list-style: none;
+}
+
+#btn>button{
+    margin-top: 10px;
+    font-size: 18px;
+    border: 0;
+    width: 70px;
+    border-radius: 10px;
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+#btn>button:hover{
+    transform: translateY(-2px);
+}
+
+#luu{
+    background-color: rgb(89, 203, 231);
+    text-align: center;
+    margin-right: 20px;
+}
+
+#huy{
+    margin-left: 20px;
+    background-color: rgb(250, 132, 116);
+    text-align: center;
+}
+
+#xoamodal{
+    background-color: rgb(89, 203, 231);
+    text-align: center;
+    margin-right: 20px;
+}
+
+#huydel{
+    margin-left: 20px;
+    background-color: rgb(250, 132, 116);
+    text-align: center;
+}
+
+#modal_item{
+    display: flex;
+}
+
+#modal_item>div{
+    margin: 20px;
+}
+
+.img-phong{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.img-phong>img{
+    width: 250px;
+    max-height: 190px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.img-phong>input{
+    margin-top: 10px;
+}
+
+#inf-edit{
+    border-right: 1px solid;
+    margin-right: 20px;
+}
+
+#inf-edit>div{
+    margin: 40px 40px 0 0;
+}
+
+#img-mota{
+    width: 250px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: unset;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    margin: 0;
+    overflow: auto;
+}
+
+#img-mota-cu{
+    width: 250px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: unset;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    margin: 0;
+    overflow: auto;
+}
+
+#img-mota>div>img{
+    border-radius: 10px;
+    height: 150px;
+    width: 200px;
+}
+
+#img-mota-cu>div>img{
+    border-radius: 10px;
+    height: 170px;
+    width: 250px;
+}
+
+#anh-phong{
+    border-right: 1px solid;
+}
+
+.item-edit{
+    width: 300px;
+}
+
+.item-edit>label{
+    font-size: 18px;
+    justify-content: left;
+}
+
+.item-edit>input{
+    float: right;
+    width: 200px;
+}
+
+#img-phong{
+    width: 100%;
+    height: 270px;
+}
+/*phân trang*/
+.page{
+    margin-top: 10px;
+}
+
+.page a {
+    color: black;
+    float: left;
+    padding:  12px 18px;
+    text-decoration: none;
+  }
+
+.page a.active {
+    background-color: rgb(107, 178, 248);
+    color: white;
+  }
+
+.page a:hover:not(.active) {
+    background-color: #ddd;
+  }
+
+/*bao loi*/
+.form-error{
+    padding: 5px 15px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 20px;
+    background-color: orangered;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.form-error span, i{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+#img-null{
+    display: none;
+}

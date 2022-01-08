@@ -1,0 +1,280 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    overflow: hidden;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-flex > .auth_form-group + .auth_form-group{
+    margin-left: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_help {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(255, 0, 119);
+    text-decoration: none;
+}
+
+.navbar_back {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(255, 0, 119);
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #dbdbdb;
+    --tabal-color: #f5f5f5;
+    --header-navbar: 33px;
+    --header-height: 145px;
+    --header-with-search-height: calc(var(--header-height) - var(--header-navbar));
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full_width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*Button*/
+
+.btn {
+    min-width: 130px;
+    height: 36px;
+    color: var(--text-color);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn_primary {
+    background-color: rgb(252, 48, 65);
+    color: var(--white-color)
+}
+
+.btn.btn_primary:hover {
+    background-color: rgb(255, 0, 21);   
+}
+
+.auth_form-margin {
+    margin: 150px 0;
+}
+
+.auth_form {
+    background-color: var(--white-color);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    min-width: 600px;
+    margin-left: -80px;
+}
+
+.auth_form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.auth_form-heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: rgb(255, 0, 119);
+}
+
+.auth_form-form {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.auth_form-input {
+    margin-top: 16px;
+    width: 300px;
+    height: 40px;
+    font-size: 1.4rem;
+    padding: 0 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    outline: none;
+}
+
+.username{
+    width: 100%;
+}
+
+.auth_form-retype {
+    margin-top: 0px;
+}
+
+.auth_form-input:focus {
+    border-color: gray;
+}
+
+.auth_form-controls {
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth_form-control-register {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.auth_form-control-back {
+    margin-right: 10px;
+}
+
+.auth_form-socials {
+    text-align: center;
+}
+
+.auth_form-text {
+    margin-top: 16px;
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+.auth_form-ask {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.auth_form-register {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(255, 0, 119);
+    text-decoration: none;
+}
+
+.btn_link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+/*Ẩn hiện password*/
+
+.auth_form-group {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.auth_form-eyes-register {
+    position: absolute;
+    top: 29px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.auth_form-group-eye {
+    font-size: 1.4rem;
+}
+
+.footer {
+    height: 50px;
+}
+
+.btn_back {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.show {
+    display: flex;
+    align-items: center;
+}
+
+#eye_close, #eye_close_com{
+    display: none;
+}
+
+/*báo lỗi*/
+.form-error{
+    padding: 5px 15px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 20px;
+    background-color: orangered;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.form-error span, i{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}

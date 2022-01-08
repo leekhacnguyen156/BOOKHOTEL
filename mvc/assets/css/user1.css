@@ -1,0 +1,546 @@
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.web{
+margin: 20px 0;
+}
+
+.container_user{
+    margin: 20px 0;
+}
+
+.main{
+    display: flex;
+}
+
+.left{
+    width: 20%;
+}
+.null{
+    height: 120px;
+}
+
+.left_left{
+    height: 400px;
+    margin-right: 3%;
+    border-radius: 5px;
+}
+
+.right{
+    width: 75%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px #ccc;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin:0 20px ;
+    border-bottom: 0.5px solid #ccc;
+}
+
+.name_edit{
+    margin-left: 10px;
+}
+
+.name{
+    font-size: 1.8rem;
+    margin: 5px 0;
+    border:none;
+    outline: none;
+    color: black;
+    font-weight: 600;
+}
+
+.edit,
+.edit_link{
+    font-size: 1.3rem;
+    color:#888;
+}
+
+.edit:hover{
+    cursor: pointer;
+}
+
+.edit_link{
+    text-decoration: none;
+}
+
+.avt{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.feat-btn{
+    cursor: pointer;
+}
+
+.list{
+    margin-top: 10px;
+}
+
+.list,
+.list_con{
+    list-style: none;
+}
+
+.link,
+.link_con{
+    text-decoration: none;
+}
+
+.link:hover,
+.link_con:hover{
+    color:blue;
+}
+
+.blue{
+    color: blue;
+}
+
+.link{
+    color: black;
+    font-size: 1.7rem;
+}
+
+.link_con{
+    font-size: 1.5rem;
+    color: #888;
+}
+
+.list_con{
+    position: static;
+    display: none;
+}
+
+.list .feat-show.show{
+    display: block;
+}
+
+.item{
+    margin: 10px 0;
+}
+
+.icon_user{
+    margin-right: 10px;
+    color:blue;
+}
+
+.icon_bell1{
+    margin-right: 10px;
+    font-size: 1.8rem;
+    color: crimson;
+}
+
+.icon_history{
+    margin-right: 10px;
+    color: yellowgreen;
+}
+
+.header_user{
+    height: 70px;
+    width: 93%;
+    border-bottom: 2px solid blue;
+    margin-left: 30px;
+}
+
+.tieude{
+    margin: 0;
+    padding: 10px 0 5px 10px;
+    color: tomato;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.slogan{
+    padding-left: 10px;
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
+.custom_avt{
+    width: 35%;
+    float: left;
+    height: 200px;
+    background-color: violet;
+}
+
+.cover_img{
+    position: relative;
+}
+
+.img_cover{
+    height: 230px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.avatar{
+    top:26%;
+    left: 50%;
+    position: absolute;
+}
+
+.anhdaidien{
+    position: relative;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img_avt{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom:0;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    bottom: 0;
+    border:none;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.custom_btn{
+    position: absolute;
+    height: 52px;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 55px;
+    box-sizing: border-box;
+    background-color: rgb(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0;
+    display: flex;
+}
+
+.custom_btn:hover{
+    opacity: 1;
+}
+
+.my_avt{
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+    color: transparent;
+}
+
+.icon_camera{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.label_update{
+    font-size: 2rem;
+    width: 150px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.my_avt::-webkit-file-upload-button{
+    visibility: hidden;
+} 
+
+.icon{
+    margin-right: 5px;
+    font-size: 2rem;
+}
+
+.btn_cover{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin:0 30px 20px 0;
+    background-color: rgb(0,0,0,0.4);
+    color:white;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+.custom_cover{
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 45%;
+    background-color: rgb(0,0,0,0.4);
+    color:white;
+
+}
+
+.btn_cover:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+.form{
+    width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.auth_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.auth_form-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.div_label{
+    text-align:right;
+    width: 150px;
+}
+
+.repass{
+    width: 200px;
+    text-align:right;
+}
+
+.div_input{
+    text-align: right;
+    
+}
+
+.label{
+    font-size: 1.6rem;
+    margin-right: 20px;
+}
+
+.input{
+    height: 30px;
+    width: 300px;
+    font-size: 1.6rem;
+    padding-left: 10px ;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+.div_btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.btn_save{
+    height: 30px;
+    width: 60px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    transition: transform linear 0.1s;
+    box-shadow: 0 2px 10px rgb(0,0,0,0.5);
+    will-change: transform;
+}
+
+.btn_save:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgb(0,0,0,0.2);
+}
+
+.user_header{
+    background-color: darkblue;
+    height: 150px;
+}
+
+.form-error{
+    padding: 5px 15px;
+    width: fit-content;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: orangered;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.form-error span, i{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+.navbar_user{
+    display: flex;
+    align-items: center;
+    height:100px ;
+    padding-left: 20px;
+    background-image: url('');
+}
+
+.name_web{
+    width: 600px;
+}
+
+.slogan_hotel{
+    flex: 1;
+    text-align: center;
+}
+
+.tienganh{
+    font-size: 3rem;
+    color: white;
+    margin: 10px 0;
+}
+
+.tiengviet{
+    font-size: 1.6rem;
+    color: yellow;
+    width: 400px;
+}
+
+.control_user{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 40px;
+}
+
+.return_home{
+    margin-left: 20px;
+}
+
+.icon_home{
+    font-size: 2rem;
+}
+
+.auth_form-eyes{
+    display: flex;
+    position: absolute;
+    right: 29%;
+}
+
+.eye_show,
+.eye_hidden{
+    color: black;
+    font-size: 1.6rem;
+}
+
+/*Lịch sử đặt phòng*/
+.history table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.history table td,
+.history table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.history table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* .history table tr:hover {
+    background-color: #ddd;
+} */
+
+.history table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#img-phongluu{
+    width: 100px;
+    height: 100px;
+}
+
+#saveroom{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#link{
+    text-decoration: none;
+    color: white;
+}
+
+#link_xemchitiet{
+    background-color: rgba(33, 33, 250, 0.822);
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+#link_xemchitiet:hover{
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
